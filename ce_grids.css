@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*
+
+   Style Sheet for Grids used in the Costume Expressions Front Page
+   Author: Embery Deal
+   Date: 9.29.17
+
+   Filename: ce_grids.css
+
+*/
+
+
+/* Grid Rows Styles */
+
+
+div.row{
+  width: 100%;
+ clear: both;
+}
+
+.row::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+/* Grid Columns Styles */
+
+
+div[class^="column"]{
+  float: left;
+}
+
+div.column100{width: 100%;}
+div.column50{width: 50%;}
+div.column33{width: 33%;}
+div.column67{width: 67%;}
+div.column25{width: 25%;}
+div.column75{width: 75%;}
+div.column20{width: 20%;}
+div.column40{width: 40%;}
+div.column60{width: 60%;}
+div.column80{width: 80%;}
+
+
+/* Grid Spacing Styles */
+
+
+div.container, div.row, div.column, div.cell, div a{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
